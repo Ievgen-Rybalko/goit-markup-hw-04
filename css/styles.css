@@ -218,7 +218,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.item .card {
+.our-advantages-cards-list .card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,16 +231,11 @@ body {
   border-radius: 4px;
 }
 
-.card > .icon {
+.our-advantages-cards-list .icon {
   display: block;
   width: 70px;
   height: 70px;
-  /* content: ''; */
-
-  /* background-image: url('../images/icons/astronaut1.svg'); */
-
-  /* fill: currentColor; */
-  fill: red;
+  fill: var(--sotials-inactive-color);
 }
 
 .our-advantages-cards,
@@ -382,7 +377,6 @@ body {
 
   width: 20px;
   height: 20px;
-
   fill: inherit;
 }
 
@@ -390,6 +384,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.sotial-cards {
   padding-bottom: 30px;
 }
 
@@ -408,9 +405,58 @@ body {
   margin-right: 10px;
 }
 
-.ellipse:hover {
+.list .ellipse:hover,
+.list .ellipse:focus {
   fill: var(--text-white-color);
   background-color: var(--basic-blue-color);
+}
+
+.section.our-clients h2 {
+  padding-top: 94px;
+  padding-bottom: 50px;
+
+  color: var(--text-headder-dark-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section .our-clients {
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 94px;
+}
+
+.our-clients .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-clients .card {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid var(--sotials-inactive-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: var(--sotials-inactive-color);
+}
+
+.our-clients .card:hover,
+.our-clients .card:focus {
+  fill: var(--basic-blue-color);
+  border: 1px solid var(--basic-blue-color);
+}
+
+.our-clients.list .icon {
+  width: 60px;
+  height: 60px;
 }
 
 .main-footer {
@@ -431,11 +477,11 @@ body {
   padding-bottom: 60px;
 }
 
-.main-footer-contact-list .list-item {
+.main-footer-contact-list > .item {
   padding-bottom: 10px;
 }
 
-.main-footer-contact-list .list-item:last-child {
+.main-footer-contact-list > item:last-child {
   padding-bottom: 0px;
 }
 
@@ -576,4 +622,22 @@ body {
 
 .main-footer .basic-contacts {
   padding-right: 40px;
+}
+
+.footer-hero em {
+  display: block;
+  padding-bottom: 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-white-color);
+}
+
+.ellipse.footer {
+  background-color: rgba(255, 255, 255, 0.1);
 }
