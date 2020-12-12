@@ -517,7 +517,7 @@ body {
 .portfolio-nav {
   display: flex;
   justify-content: center;
-  padding-bottom: 16px;
+  margin-bottom: 50px;
 }
 
 .portfolio-nav .filter-item:not(:last-child) {
@@ -559,7 +559,7 @@ body {
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
-  padding-top: 34px;
+  /* padding-top: 34px; */
   padding-bottom: 94px;
 }
 
