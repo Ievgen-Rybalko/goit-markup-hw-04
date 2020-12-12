@@ -158,6 +158,21 @@ body {
   fill: currentColor;
 }
 
+/* ===== Main style ===== */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+
+.section.order-now {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .order-now {
   /* background: var(--background-dark-color); */
 
@@ -212,7 +227,11 @@ body {
   letter-spacing: 0.06em;
 }
 
-.our-advantages-cards-list .card {
+.our-advantages-cards {
+  outline: 2px dashed tomato;
+}
+
+.our-advantages-list .card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,7 +244,7 @@ body {
   border-radius: 4px;
 }
 
-.our-advantages-cards-list .icon {
+.our-advantages-list .icon {
   display: block;
   width: 70px;
   height: 70px;
@@ -256,56 +275,41 @@ body {
 }
 
 /* placement for advantage cards */
-.our-advantages-cards-list {
+.our-advantages-list {
   display: flex;
-  margin-top: 94px;
-  padding-left: 215px;
-  padding-right: 215px;
 }
 
-.our-advantages-cards-list .item:not(:last-child) {
+.our-advantages-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-advantages-cards-list .item {
+.our-advantages-list .item {
   width: 270px;
 }
 
-.our-advantages-cards-list h3 {
+.our-advantages-list h3 {
   margin-bottom: 10px;
 }
 
 /* placment of what we do section */
-.section-what-we-do {
-  padding-bottom: 94px;
-}
 
-.section-what-we-do h2 {
-  margin-top: 94px;
-  margin-bottom: 50px;
-}
-
-.section-what-we-do-list {
+.what-we-do-list {
   display: flex;
-  padding-left: 215px;
-  padding-right: 215px;
 }
 
-.section-what-we-do-list .item:not(:last-child) {
+.what-we-do-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.section-what-we-do-list img {
+.what-we-do-list img {
   display: block;
 }
 
-.section-our-team h2 {
-  padding-top: 94px;
-  padding-bottom: 50px;
+.section h2 {
+  margin-bottom: 50px;
 }
 
-.section-what-we-do h2,
-.section-our-team h2 {
+.section h2 {
   color: var(--text-headder-dark-color);
   font-weight: 700;
   font-size: 36px;
@@ -314,27 +318,23 @@ body {
   letter-spacing: 0.03em;
 }
 
-.section-our-team {
-  padding-bottom: 94px;
-
+.section.our-team {
   background: var(--background-medium-color);
 }
 
-.section-our-team-list {
+.our-team-list {
   display: flex;
-  padding-left: 215px;
-  padding-right: 215px;
 }
 
-.section-our-team-list .item:not(:last-child) {
+.our-team-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.section-our-team-list img {
+.our-team-list img {
   display: block;
 }
 
-.section-our-team-list .item {
+.our-team-list .item {
   width: 270px;
 
   background: var(--background-main-color);
@@ -348,7 +348,7 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.section-our-team-list h3 {
+.our-team-list h3 {
   margin-bottom: 10px;
 
   color: var(--text-headder-dark-color);
@@ -359,7 +359,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.section-our-team-list p {
+.our-team-list p {
   margin-bottom: 16px;
 
   font-weight: 400;
@@ -404,30 +404,16 @@ body {
   background-color: var(--basic-blue-color);
 }
 
-.section.our-clients h2 {
-  padding-top: 94px;
-  padding-bottom: 50px;
-
-  color: var(--text-headder-dark-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 .section .our-clients {
   display: flex;
   justify-content: center;
-
-  padding-bottom: 94px;
 }
 
 .our-clients .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-clients .card {
+.our-clients .card-link {
   display: block;
   display: flex;
   justify-content: center;
@@ -441,8 +427,8 @@ body {
   fill: var(--sotials-inactive-color);
 }
 
-.our-clients .card:hover,
-.our-clients .card:focus {
+.our-clients .card-link:hover,
+.our-clients .card-link:focus {
   fill: var(--basic-blue-color);
   border: 1px solid var(--basic-blue-color);
 }
@@ -459,7 +445,7 @@ body {
 }
 
 .basic-contacts {
-  margin-left: 215px;
+  padding-left: 215px;
 }
 
 .main-footer .logo {
@@ -596,7 +582,7 @@ body {
   border-bottom: 1px solid #eeeeee;
 }
 
-.portfolio-cards h2 {
+.item-text h2 {
   margin-bottom: 4px;
 
   color: var(--text-headder-dark-color);
@@ -606,7 +592,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.portfolio-cards p {
+.item-text p {
   display: block;
 
   color: var(--text-common-light-color);
