@@ -344,9 +344,12 @@ body {
   border-bottom-left-radius: 4px;
 }
 
-.section-our-team-list h3 {
+.item .personal-data {
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+}
+.section-our-team-list h3 {
+  margin-bottom: 10px;
 
   color: var(--text-headder-dark-color);
   font-weight: 500;
@@ -357,7 +360,7 @@ body {
 }
 
 .section-our-team-list p {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 
   font-weight: 400;
   font-size: 16px;
@@ -378,10 +381,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.section-our-team-list .sotial-cards {
-  padding-bottom: 30px;
 }
 
 .sotial-cards .ellipse {
@@ -598,6 +597,8 @@ body {
 }
 
 .portfolio-cards h2 {
+  margin-bottom: 4px;
+
   color: var(--text-headder-dark-color);
   font-weight: 700;
   font-size: 18px;
@@ -607,7 +608,6 @@ body {
 
 .portfolio-cards p {
   display: block;
-  padding-top: 4px;
 
   color: var(--text-common-light-color);
   font-weight: 400;
