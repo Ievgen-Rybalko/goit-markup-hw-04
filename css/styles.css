@@ -75,7 +75,7 @@ body {
 }
 
 /* Container main-nav in header */
-.container-nav-main {
+.nav-main {
   display: flex;
   align-items: center;
 }
@@ -85,7 +85,7 @@ body {
   margin-left: auto;
 }
 
-.nav-main {
+.nav-main-list {
   display: flex;
   margin-left: 93px;
 }
@@ -96,11 +96,11 @@ body {
 }
 
 /* for experiments */
-.nav-main > li + li {
+.nav-main-list > li + li {
   margin-left: 50px;
 }
 
-/* .nav-main > li:last-child {
+/* .nav-main-list > li:last-child {
   margin-right: 0px;
 } */
 
@@ -112,7 +112,7 @@ body {
   margin-right: 0px;
 } */
 
-.nav-main a {
+.nav-main-list a {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -125,10 +125,10 @@ body {
   color: var(--text-common-light-color);
 }
 
-.nav-main .is-current,
-.nav-main a:hover,
-.nav-main a:active,
-.nav-main a:focus,
+.nav-main-list .is-current,
+.nav-main-list a:hover,
+.nav-main-list a:active,
+.nav-main-list a:focus,
 .top-contacts a:hover,
 .top-contacts a:active,
 .top-contacts a:focus {
@@ -148,12 +148,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.nav-main a {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .top-contacts .svg-item {
@@ -197,7 +191,7 @@ body {
   text-transform: uppercase;
 }
 
-.order-now div {
+.order-now-button {
   padding-bottom: 200px;
 }
 
@@ -305,6 +299,11 @@ body {
   display: block;
 }
 
+.section-our-team h2 {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
 .section-what-we-do h2,
 .section-our-team h2 {
   color: var(--text-headder-dark-color);
@@ -319,11 +318,6 @@ body {
   padding-bottom: 94px;
 
   background: var(--background-medium-color);
-}
-
-.section-our-team h2 {
-  padding-top: 94px;
-  margin-bottom: 50px;
 }
 
 .section-our-team-list {
@@ -386,7 +380,7 @@ body {
   align-items: center;
 }
 
-.sotial-cards {
+.section-our-team-list .sotial-cards {
   padding-bottom: 30px;
 }
 
@@ -465,15 +459,17 @@ body {
   background: var(--background-dark-color);
 }
 
+.basic-contacts {
+  margin-left: 215px;
+}
+
 .main-footer .logo {
   display: block;
   padding-top: 60px;
   padding-bottom: 20px;
-  margin-left: 215px;
 }
 
 .main-footer-contact-list {
-  margin-left: 215px;
   padding-bottom: 60px;
 }
 
@@ -481,7 +477,7 @@ body {
   padding-bottom: 10px;
 }
 
-.main-footer-contact-list > item:last-child {
+.main-footer-contact-list > .item:last-child {
   padding-bottom: 0px;
 }
 
@@ -522,7 +518,6 @@ body {
   display: flex;
   justify-content: center;
   padding-bottom: 16px;
-  margin-bottom: 34px;
 }
 
 .portfolio-nav .filter-item:not(:last-child) {
@@ -549,6 +544,10 @@ body {
   /* text-align: center; */
 }
 
+.portfolio-cards .item {
+  display: block;
+}
+
 .portfolio-nav .item:hover,
 .portfolio-nav .item:active,
 .portfolio-nav .item:focus {
@@ -556,14 +555,11 @@ body {
   color: var(--text-white-color);
 }
 
-.nav-main-portfolio a.is-current {
-  color: var(--basic-blue-color);
-}
-
 .portfolio-cards {
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
+  padding-top: 34px;
   padding-bottom: 94px;
 }
 
@@ -582,11 +578,11 @@ body {
   margin-bottom: 30px;
 }
 
-.portfolio-cards .item:not(:nth-child(3n)) {
+.portfolio-cards .list-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.portfolio-cards .item:not(-n + 3) {
+.portfolio-cards .list-item:not(-n + 3) {
   margin-bottom: 30px;
 }
 
