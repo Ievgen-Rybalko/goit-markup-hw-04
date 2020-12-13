@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./css/normalize.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,12 +14,12 @@
 
 </head>
 <body>
-    <header>
+    <header class="header-main">
         <div class="container header">
-            <nav class="nav-main">
+            <nav class="nav">
                 <a class="logo" href="index.html">Web<span class="logo-accent">Studio</span></a>
                 <!-- Навигация по сайту -->
-                <ul class="nav-main-list">
+                <ul class="nav-main list">
                     <li><a class="is-current" href="./index.html">Студия</a></li>
                     <li><a href="./portfolio.html">Портфолио</a></li>
                     <li><a href="#contacts">Контакты</a></li>
@@ -59,8 +59,8 @@
             </section>
             <!-- Карточки с приемуществами -->
             <section>
-                <div class="section our-advantages-cards">
-                    <ul class="our-advantages-list">
+                <div class="container section our-advantages-cards">
+                    <ul class="our-advantages list">
                         <li class="item">
                             <div class="card">
                                 <svg class="icon">
@@ -101,9 +101,10 @@
                     </ul>
                 </div>
             </section>
+
             <!-- Чем мы занимаемся -->
             <section>
-                <div class="section what-we-do">
+                <div class="container section what-we-do">
                     <h2>Чем мы занимаемся</h2>
                     <ul class="what-we-do-list">
                         <li class="item"><img src="images/box1.jpg" alt="Кодим" width="370" height="294"></li>
@@ -112,137 +113,141 @@
                     </ul>
                 </div>
             </section>
+
             <!-- Наша команда -->
             <section>
                 <div class="section our-team">
-                    <h2>Наша команда</h2>
-                    <ul class="our-team-list">
-                        <li class="item">
-                            <img src="images/1IgorDemianenko.jpg" alt="Игорь Демьяненко" width="270" height="260">
-                            <div class="personal-data">
-                                <h3>Игорь Демьяненко</h3>
-                                <p>Product Designer</p>
-                                <div class="sotial-cards list">
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#instagram"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#twitter"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#facebook"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#linkedin"></use>
-                                        </svg>
-                                    </a>
+                    <div class="container our-team">
+                        <h2>Наша команда</h2>
+                        <ul class="our-team-list">
+                            <li class="item">
+                                <img src="images/1IgorDemianenko.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                                <div class="personal-data">
+                                    <h3>Игорь Демьяненко</h3>
+                                    <p>Product Designer</p>
+                                    <div class="sotial-cards list">
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#twitter"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#facebook"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
                     
-                        </li>
+                            </li>
                     
-                        <li class="item">
-                            <img src="images/2OlgaRepina.jpg" alt="Ольга Репина" width="270" height="260">
-                            <div class="personal-data">
-                                <h3>Ольга Репина</h3>
-                                <p>Frontend Developer</p>
-                                <div class="sotial-cards list">
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#instagram"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#twitter"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#facebook"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#linkedin"></use>
-                                        </svg>
-                                    </a>
+                            <li class="item">
+                                <img src="images/2OlgaRepina.jpg" alt="Ольга Репина" width="270" height="260">
+                                <div class="personal-data">
+                                    <h3>Ольга Репина</h3>
+                                    <p>Frontend Developer</p>
+                                    <div class="sotial-cards list">
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#twitter"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#facebook"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
                     
-                        <li class="item">
-                            <img src="images/3NikolayTarasov.jpg" alt="Николай Тарасов" width="270" height="260">
-                            <div class="personal-data">
-                                <h3>Николай Тарасов</h3>
-                                <p>Marketing</p>
-                                <div class="sotial-cards list">
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#instagram"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#twitter"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#facebook"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#linkedin"></use>
-                                        </svg>
-                                    </a>
+                            <li class="item">
+                                <img src="images/3NikolayTarasov.jpg" alt="Николай Тарасов" width="270" height="260">
+                                <div class="personal-data">
+                                    <h3>Николай Тарасов</h3>
+                                    <p>Marketing</p>
+                                    <div class="sotial-cards list">
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#twitter"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#facebook"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
                     
-                        <li class="item">
-                            <img src="images/4MikhailErmakov.jpg" alt="Михаил Ермаков" width="270" height="260">
-                            <div class="personal-data">
-                                <h3>Михаил Ермаков</h3>
-                                <p>UI Designer</p>
-                                <div class="sotial-cards list">
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#instagram"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#twitter"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#facebook"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="ellipse" href="#">
-                                        <svg class="icon">
-                                            <use href="./images/icons/sotials.svg#linkedin"></use>
-                                        </svg>
-                                    </a>
+                            <li class="item">
+                                <img src="images/4MikhailErmakov.jpg" alt="Михаил Ермаков" width="270" height="260">
+                                <div class="personal-data">
+                                    <h3>Михаил Ермаков</h3>
+                                    <p>UI Designer</p>
+                                    <div class="sotial-cards list">
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#twitter"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#facebook"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="ellipse" href="#">
+                                            <svg class="icon">
+                                                <use href="./images/icons/sotials.svg#linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
-            <!-- our clients section -->
+
+            <!-- Наши постоянные клиенты -->
             <section>
-                <div class="section our-clients">
+                <div class="container section our-clients">
                     <h2>Постоянные клиенты</h2>
                     <ul class="our-clients list">
                         <li class="item">
@@ -293,8 +298,8 @@
         </div>
     </main>
         
-    <footer>
-        <div class="main-footer">
+    <footer class="main-footer">
+        <div class="container footer">
             <div class="basic-contacts">
                 <a class="logo" href="index.html">Web<span class="logo-accent logo-inverse">Studio</span></a>
                 <address>
