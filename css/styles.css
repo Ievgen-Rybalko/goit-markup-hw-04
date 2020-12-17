@@ -196,7 +196,7 @@ body {
 }
 
 .section.order-now {
-  padding-top: 0px;
+  padding-top: 200px;
   padding-bottom: 200px;
   padding-left: 0px;
   padding-right: 0px;
@@ -221,7 +221,6 @@ body {
 
 .order-now h1 {
   margin-bottom: 30px;
-  padding-top: 200px;
   margin-block-start: 0px;
 
   color: var(--text-white-color);
